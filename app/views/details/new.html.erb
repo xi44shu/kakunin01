@@ -1,0 +1,10 @@
+<%= form_with model: @detail, url: details_path, local: true do |f| %>
+<%= f.label :工法を選択, class: 'lavel' %>
+<%= f.text_field :construction_method, class: 'date-select' %>
+<%= f.label :管種を入力, class: 'lavel' %>
+<%= f.text_field :pipe_type, class: 'date-select' %>
+<%= f.label :サイズを入力, class: 'lavel' %>
+<%= f.text_field :pipe_size, class: 'text-input' %>
+
+<%= f.submit "登録する" %>
+<% end %>
